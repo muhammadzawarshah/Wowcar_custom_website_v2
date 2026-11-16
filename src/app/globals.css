@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --primary-orange: #ff9540;
+  --primary-orange-hover: #e8822e;
+  --dark-navy: #1b2935;
+  --dark-slate: #283948;
+  --text-muted: #556e82;
+  --bg-page: #f8fafd;
+  --border-light: #eaeff5;
+}
+
+body {
+  background-color: #f8fafd;
+  color: #283948;
+  font-family: "Prompt", "Noto Sans Thai", "Thonburi", "Sarabun", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.text-brand-orange {
+  color: #ff9540;
+}
+
+.bg-brand-orange {
+  background-color: #ff9540;
+}
+
+.bg-brand-orange:hover {
+  background-color: #e8822e;
+}
+
+.border-brand-orange {
+  border-color: #ff9540;
+}
