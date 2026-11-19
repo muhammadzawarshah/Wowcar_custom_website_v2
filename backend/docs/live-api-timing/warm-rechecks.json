@@ -1,0 +1,52 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/v1/vehicles/filters/all",
+    "status": 200,
+    "ttfbMs": 6693.4,
+    "totalMs": 7151.3,
+    "responseBytes": 45149552,
+    "cache": "REVALIDATED",
+    "requestId": "4246e5b7-7100-4906-ac1f-964730ada72f"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/vehicles/facets",
+    "status": 200,
+    "ttfbMs": 231.8,
+    "totalMs": 238.5,
+    "responseBytes": 934310,
+    "cache": "REVALIDATED",
+    "requestId": "adaad025-6470-4895-8a74-cb205392984a"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/vehicles/filters/makes",
+    "status": 200,
+    "ttfbMs": 146.9,
+    "totalMs": 147.5,
+    "responseBytes": 4100,
+    "cache": "REVALIDATED",
+    "requestId": "4a528602-7693-4a21-8dcd-9b61a00276ed"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/vehicles/filters/variants",
+    "status": 200,
+    "ttfbMs": 179,
+    "totalMs": 184,
+    "responseBytes": 703824,
+    "cache": "REVALIDATED",
+    "requestId": "90606efc-57bb-4a76-a456-14ffd150a622"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/vehicles?pageSize=2",
+    "status": 200,
+    "ttfbMs": 345,
+    "totalMs": 345.9,
+    "responseBytes": 22241,
+    "cache": "EXPIRED",
+    "requestId": "b215bac0-8858-48a0-90fd-764da2eda0b0"
+  }
+]

@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState, useMemo, Suspense } from "react";
+import React, { useState, useMemo, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { CARS_DATA, CarListing } from "@/data/cars";
+import { fetchVehiclesFromApi } from "@/lib/api";
 import CarCard from "@/components/CarCard";
 import {
   Search,
@@ -30,6 +31,19 @@ function ListingsContent() {
   const [priceRange, setPriceRange] = useState(initialPriceRange);
   const [sortBy, setSortBy] = useState("newest");
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
+  const [allCars, setAllCars] = useState<CarListing[]>(CARS_DATA);
+
+  useEffect(() => {
+    let active = true;
+    fetchVehiclesFromApi({ pageSize: 50 }).then((res) => {
+      if (active && res.data.length > 0 && res.data !== CARS_DATA) {
+        setAllCars(res.data);
+      }
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   // Reset filters
   const handleReset = () => {
@@ -44,7 +58,7 @@ function ListingsContent() {
 
   // Filter logic
   const filteredCars = useMemo(() => {
-    return CARS_DATA.filter((car) => {
+    return allCars.filter((car) => {
       // Keyword
       if (keyword) {
         const q = keyword.toLowerCase();
@@ -90,7 +104,7 @@ function ListingsContent() {
       if (sortBy === "mileage_asc") return a.mileage - b.mileage;
       return 0;
     });
-  }, [keyword, brand, bodyType, fuel, transmission, priceRange, sortBy]);
+  }, [allCars, keyword, brand, bodyType, fuel, transmission, priceRange, sortBy]);
 
   return (
     <div className="bg-[#F8FAFD] min-h-screen py-10">

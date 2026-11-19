@@ -26,7 +26,7 @@ export default function FeaturedListings() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header row exactly matching Screenshot 1 */}
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
-          <h2 className="text-2xl sm:text-[28px] font-bold text-[#2C3640] tracking-tight">
+          <h2 className="text-2xl sm:text-[28px] font-semibold text-[#2C3640] tracking-tight">
             รถยนต์แนะนำ
           </h2>
 
@@ -37,7 +37,7 @@ export default function FeaturedListings() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2 rounded-lg text-xs font-semibold transition cursor-pointer ${
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer ${
                     activeTab === tab.id
                       ? "bg-[#D8D7DA] text-[#FF9540]"
                       : "text-[#7D8183] hover:text-[#2C3640]"
@@ -51,7 +51,7 @@ export default function FeaturedListings() {
             {/* Orange "ดูทั้งหมด" button with arrow */}
             <Link
               href="/listings"
-              className="bg-[#FF9540] hover:bg-[#E8822E] text-white text-xs font-bold px-4 py-2.5 rounded-lg shadow-xs transition flex items-center gap-1.5 ml-1"
+              className="bg-[#FF9540] hover:bg-[#E8822E] text-white text-sm font-medium px-4 py-2.5 rounded-lg shadow-xs transition flex items-center gap-1.5 ml-1"
             >
               <span>ดูทั้งหมด</span>
               <ArrowRight className="w-3.5 h-3.5" />

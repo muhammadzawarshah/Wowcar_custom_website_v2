@@ -41,13 +41,13 @@ export default function ServicesSection() {
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span className="text-xs font-bold text-[#FDFDFE] uppercase tracking-wider bg-[#1B2935] px-4 py-1.5 rounded-full inline-block">
+          <span className="text-xs font-semibold text-[#FDFDFE] uppercase tracking-wider bg-[#1B2935] px-4 py-1.5 rounded-full inline-block">
             บริการของเรา
           </span>
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-[#FDFDFE] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-semibold text-[#FDFDFE] tracking-tight">
             ทำไมต้องเลือก <span className="text-[#FF9540]">WOWCAR</span>
           </h2>
-          <p className="text-base text-[#D8D7DA] leading-relaxed">
+          <p className="text-base sm:text-lg text-[#E5E7EB] font-normal leading-relaxed">
             เรามุ่งมั่นสร้างประสบการณ์การซื้อขายรถยนต์มือสองที่โปร่งใส สะดวกสบาย และปลอดภัยที่สุดในไทย
           </p>
         </div>
@@ -65,16 +65,16 @@ export default function ServicesSection() {
                     <div className="w-12 h-12 rounded-xl bg-[#F8FAFD] text-[#FF9540] shadow-xs flex items-center justify-center group-hover:bg-[#FF9540] group-hover:text-white transition-colors duration-300">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-[11px] font-semibold text-[#7D8183] bg-[#F8FAFD] px-2.5 py-1 rounded-full border border-gray-200">
+                    <span className="text-xs font-medium text-[#556E82] bg-[#F8FAFD] px-2.5 py-1 rounded-full border border-gray-200">
                       {item.badge}
                     </span>
                   </div>
 
-                  <h3 className="text-base font-bold text-[#2C3640] mb-2.5 group-hover:text-[#FF9540] transition-colors leading-snug">
+                  <h3 className="text-lg font-semibold text-[#2C3640] mb-3 group-hover:text-[#FF9540] transition-colors leading-snug">
                     {item.title}
                   </h3>
 
-                  <p className="text-xs text-[#7D8183] leading-relaxed">
+                  <p className="text-sm sm:text-[15px] text-[#556E82] leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -82,7 +82,7 @@ export default function ServicesSection() {
                 <div className="pt-5 mt-4 border-t border-gray-100">
                   <Link
                     href="/listings"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#FF9540] hover:text-[#E8822E] transition"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-[#FF9540] hover:text-[#E8822E] transition"
                   >
                     <span>ค้นหาเลย</span>
                     <ArrowRight className="w-3.5 h-3.5" />

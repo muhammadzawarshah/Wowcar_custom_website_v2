@@ -1,0 +1,15 @@
+dealer_id,dealer_name,matching_excel_dealer_ids,matching_excel_dealer_names,status
+468,Eastvaal Bethal Datsun,467; 470; 471,Bethal Renault Eastvaal; Eastvaal Bethal Used; Eastvaal UD Bethal,Shared normalized address only; verify before assigning coordinates
+469,Eastvaal Bethal Nissan,467; 470; 471,Bethal Renault Eastvaal; Eastvaal Bethal Used; Eastvaal UD Bethal,Shared normalized address only; verify before assigning coordinates
+499,Kohler Auto Isuzu,503,Kohler Auto Used,Shared normalized address only; verify before assigning coordinates
+500,Kohler Auto Opel,503,Kohler Auto Used,Shared normalized address only; verify before assigning coordinates
+501,Kohler Auto Peugeot & Citroen,503,Kohler Auto Used,Shared normalized address only; verify before assigning coordinates
+3912,Renault Clearwater,3897; 3903,IC Auto Nissan Clearwater; JMC Clearwater,Shared normalized address only; verify before assigning coordinates
+3913,Renault East London,3891,Automall Nissan East London,Shared normalized address only; verify before assigning coordinates
+3914,Renault Kempton Park,3906,Mahindra Kempton Park,Shared normalized address only; verify before assigning coordinates
+3950,IPOP Suzuki Bassonia JHB South,3894,Suzuki Bassonia JHB South,Shared normalized address only; verify before assigning coordinates
+3954,JAC Pre-Owned Middelburg,3560,JAC Middelburg,Shared normalized address only; verify before assigning coordinates
+3956,IPOP Suzuki West Rand,563,Suzuki West Rand,Shared normalized address only; verify before assigning coordinates
+3960,Knysna Nissan,561,Knysna Nissan,Shared normalized address only; verify before assigning coordinates
+3961,GWM Haval Hatfield,3096,GWM Haval Hatfield,Shared normalized address only; verify before assigning coordinates
+3962,GWM Haval Menlyn,2699,GWM Haval Menlyn,Shared normalized address only; verify before assigning coordinates

@@ -38,13 +38,13 @@ export default function HeroSearch() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left Column (Heading) */}
           <div className="lg:col-span-7 space-y-6">
-            <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-black text-white tracking-tight leading-[1.2]">
+            <h1 className="text-4xl sm:text-5xl lg:text-[52px] font-semibold text-white tracking-tight leading-[1.22]">
               ลงขายรถมือสองฟรี!<br />
               <span className="text-[#FF9540]">ไม่มีค่าใช้จ่าย</span><br />
               ได้ราคาโดนใจแน่นอน
             </h1>
 
-            <p className="text-base sm:text-lg text-[#D8D7DA] font-light leading-relaxed max-w-xl">
+            <p className="text-lg sm:text-xl text-[#E5E7EB] font-normal leading-relaxed max-w-xl">
               “ค้นหารถมือสองได้ง่าย พร้อมตำแหน่ง<br className="hidden sm:inline" />
               ของเหล่าดีลเลอร์ ที่ชัดเจนในทุกพื้นที่”
             </p>
@@ -53,7 +53,7 @@ export default function HeroSearch() {
           {/* Right Column: Hero Search Form Box (ค้นหา WowCar) */}
           <div className="lg:col-span-5 w-full">
             <div className="bg-[#1B2935]/85 backdrop-blur-md rounded-2xl p-6 sm:p-8 shadow-2xl border border-[#7D8183]/40 max-w-[430px] mx-auto lg:ml-auto">
-              <h2 className="text-white text-2xl font-bold text-center mb-6">
+              <h2 className="text-white text-2xl font-semibold text-center mb-6">
                 ค้นหา WowCar
               </h2>
 
@@ -132,7 +132,7 @@ export default function HeroSearch() {
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="w-full bg-[#FF9540] hover:bg-[#E8822E] text-white font-bold h-[48px] rounded-xl shadow-lg transition transform active:scale-95 text-base flex items-center justify-center cursor-pointer"
+                    className="w-full bg-[#FF9540] hover:bg-[#E8822E] text-white font-semibold h-[48px] rounded-xl shadow-lg transition transform active:scale-95 text-base flex items-center justify-center cursor-pointer"
                   >
                     <span>ค้นหา</span>
                   </button>

@@ -10,21 +10,21 @@ export default function NewsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#FF9540] uppercase tracking-wider mb-2">
+            <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#FF9540] uppercase tracking-wider mb-2">
               <Newspaper className="w-3.5 h-3.5" />
               <span>ข่าวสารและอัปเดต</span>
             </div>
-            <h2 className="text-3xl font-extrabold text-[#283948] tracking-tight">
+            <h2 className="text-3xl font-semibold text-[#283948] tracking-tight">
               ว้าวข่าว WowCar (News & Insights)
             </h2>
-            <p className="text-sm text-[#556E82] mt-1">
+            <p className="text-base text-[#556E82] mt-2 leading-relaxed">
               อัปเดตเทรนด์ยานยนต์ รีวิวรถยนต์ และเคล็ดลับการซื้อขายรถมือสอง
             </p>
           </div>
 
           <Link
             href="/blog"
-            className="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm font-bold text-[#FF9540] hover:text-[#E8822E] transition"
+            className="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm font-medium text-[#FF9540] hover:text-[#E8822E] transition"
           >
             <span>ดูบทความทั้งหมด</span>
             <ArrowRight className="w-4 h-4" />
@@ -62,18 +62,18 @@ export default function NewsSection() {
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#283948] line-clamp-2 mb-2 group-hover:text-[#FF9540] transition-colors leading-snug">
+                <h3 className="text-lg font-semibold text-[#283948] line-clamp-2 mb-2.5 group-hover:text-[#FF9540] transition-colors leading-snug">
                   {post.title}
                 </h3>
 
-                <p className="text-sm text-[#556E82] line-clamp-3 mb-4 leading-relaxed">
+                <p className="text-[15px] text-[#556E82] line-clamp-3 mb-4 leading-relaxed">
                   {post.excerpt}
                 </p>
 
                 <div className="mt-auto pt-4 border-t border-gray-200/60">
                   <Link
                     href={`/blog`}
-                    className="inline-flex items-center gap-1 text-xs font-bold text-[#FF9540] group-hover:underline"
+                    className="inline-flex items-center gap-1 text-sm font-medium text-[#FF9540] group-hover:underline"
                   >
                     <span>อ่านต่อ</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

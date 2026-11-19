@@ -1,0 +1,33 @@
+{
+  "startedAt": "2026-10-31T21:55:33.642Z",
+  "appId": "group1",
+  "steps": [
+    {
+      "step": "temporary-account",
+      "status": 201,
+      "userId": "01a193f5-febd-77d9-b87f-fa8843c92b1d"
+    },
+    {
+      "step": "signed-upload-url",
+      "status": 201,
+      "documentId": "d85721fa-4b06-4791-a4c0-4ff656f49329",
+      "storageOrigin": "http://localhost:9000",
+      "method": "PUT",
+      "size": 617
+    }
+  ],
+  "cleanup": {
+    "document": {
+      "error": "DELETE /me/documents/d85721fa-4b06-4791-a4c0-4ff656f49329: HTTP 500 INTERNAL_ERROR An unexpected error occurred"
+    },
+    "account": {
+      "status": 204,
+      "anonymised": true
+    },
+    "note": "No file bytes uploaded. Document deletion returned 500; PENDING record remains.",
+    "temporaryCredentialsRemoved": true
+  },
+  "failure": "Upload URL is not a public HTTPS storage endpoint",
+  "verified": false,
+  "finishedAt": "2026-10-31T21:55:39.129Z"
+}

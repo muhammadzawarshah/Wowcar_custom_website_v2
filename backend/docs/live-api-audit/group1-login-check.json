@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-31T22:20:22.672Z",
+  "results": [
+    {
+      "path": "/api/v1/scope/3490,3491,3493,3496/auth/register",
+      "status": 201,
+      "expected": 201,
+      "pass": true,
+      "appId": "group1",
+      "userId": "01a1940c-94ed-73a8-9641-9457d15d6ad4",
+      "role": "CUSTOMER"
+    },
+    {
+      "path": "/api/v1/scope/3490,3491,3493,3496/auth/login",
+      "status": 200,
+      "expected": 200,
+      "pass": true,
+      "appId": "group1",
+      "userId": "01a1940c-94ed-73a8-9641-9457d15d6ad4",
+      "role": "CUSTOMER"
+    },
+    {
+      "path": "/api/v1/apps/group1/auth/login",
+      "status": 200,
+      "expected": 200,
+      "pass": true,
+      "appId": "group1",
+      "userId": "01a1940c-94ed-73a8-9641-9457d15d6ad4",
+      "role": "CUSTOMER"
+    },
+    {
+      "path": "/api/v1/apps/group1/auth/login",
+      "status": 401,
+      "expected": 401,
+      "pass": true,
+      "code": "INVALID_CREDENTIALS"
+    },
+    {
+      "path": "/api/v1/auth/login",
+      "status": 401,
+      "expected": 401,
+      "pass": true,
+      "code": "INVALID_CREDENTIALS"
+    }
+  ]
+}

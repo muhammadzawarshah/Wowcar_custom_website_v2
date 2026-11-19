@@ -1,0 +1,150 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/v1/catalogue/variants/compare?ids=1525ac7e-9662-5e8c-a0da-87a46836a73c,1148dae5-a2a3-5e7b-af4f-c26d7d4d38d7",
+    "label": "Valid comparison using two live variants",
+    "status": 0,
+    "error": "The operation was aborted due to timeout",
+    "retry": {
+      "status": 200,
+      "durationMs": 162,
+      "keys": [
+        "items"
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/dealers/register",
+    "label": "Confirm missing nested objects error",
+    "status": 500,
+    "durationMs": 13022,
+    "response": {
+      "statusCode": 500,
+      "code": "INTERNAL_ERROR",
+      "message": "An unexpected error occurred",
+      "requestId": "d55865d8-52a0-4a4f-9175-b2bf67b89306",
+      "timestamp": "2026-10-31T17:00:53.343Z",
+      "path": "/api/v1/dealers/register"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/dealers/register",
+    "label": "Nested validation control",
+    "status": 400,
+    "durationMs": 370,
+    "response": {
+      "statusCode": 400,
+      "code": "VALIDATION_FAILED",
+      "message": "Request validation failed",
+      "details": [
+        "owner.email must be shorter than or equal to 254 characters",
+        "owner.email must be an email",
+        "owner.Password must be 8-128 characters and contain at least one letter and one number",
+        "owner.password must be a string",
+        "owner.firstName must be longer than or equal to 1 characters",
+        "owner.firstName must be a string",
+        "owner.lastName must be longer than or equal to 1 characters",
+        "owner.lastName must be a string",
+        "owner.You must accept the terms and privacy policy",
+        "dealership.name must be longer than or equal to 2 characters",
+        "dealership.name must be a string",
+        "dealership.email must be an email",
+        "dealership.phone must be a valid phone number",
+        "dealership.province must be one of the following values: Eastern Cape, Free State, Gauteng, KwaZulu-Natal, Limpopo, Mpumalanga, Northern Cape, North West, Western Cape",
+        "dealership.city must be longer than or equal to 2 characters",
+        "dealership.city must be a string",
+        "dealership.address must be longer than or equal to 3 characters",
+        "dealership.address must be a string"
+      ],
+      "requestId": "f123cbf9-f1e9-433b-a5e9-487e6f4fbc83",
+      "timestamp": "2026-10-31T17:00:53.675Z",
+      "path": "/api/v1/dealers/register"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/finance/repayment",
+    "label": "Valid repayment calculator",
+    "status": 200,
+    "durationMs": 630,
+    "keys": [
+      "vehiclePrice",
+      "deposit",
+      "financeAmount",
+      "balloonAmount",
+      "termMonths",
+      "annualInterestRate",
+      "monthlyRepayment",
+      "totalRepayment",
+      "totalInterest"
+    ],
+    "response": {
+      "vehiclePrice": 450000,
+      "deposit": 45000,
+      "financeAmount": 405000,
+      "balloonAmount": 135000,
+      "termMonths": 72,
+      "annualInterestRate": 11.75,
+      "monthlyRepayment": 6565.39,
+      "totalRepayment": 607708.16,
+      "totalInterest": 202708.16
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/finance/affordability",
+    "label": "Valid affordability calculator",
+    "status": 200,
+    "durationMs": 149,
+    "keys": [
+      "monthlyIncome",
+      "monthlyExpenses",
+      "disposableIncome",
+      "maxMonthlyRepayment",
+      "maxFinanceAmount",
+      "estimatedVehicleBudget",
+      "assumptions"
+    ],
+    "response": {
+      "monthlyIncome": 45000,
+      "monthlyExpenses": 25000,
+      "disposableIncome": 20000,
+      "maxMonthlyRepayment": 13500,
+      "maxFinanceAmount": 695144.24,
+      "estimatedVehicleBudget": 725144.24,
+      "assumptions": [
+        "Instalment capped at 30% of gross monthly income and at disposable income",
+        "11.75% fixed annual interest over 72 months",
+        "No balloon payment",
+        "Excludes insurance, licence, initiation and service fees. Final approval depends on the lender."
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/scope/2854/vehicles?pageSize=2",
+    "label": "Existing dealer inventory scope",
+    "status": 200,
+    "durationMs": 5387,
+    "keys": [
+      "data",
+      "meta"
+    ],
+    "meta": {
+      "page": 1,
+      "pageSize": 2,
+      "total": 28,
+      "pageCount": 14,
+      "stockCount": 28,
+      "source": {
+        "source": "dealertrade",
+        "total_stock_count": null,
+        "last_updated": "2026-10-31 18:12:02",
+        "total": null,
+        "fetchedAt": "2026-10-31T17:00:50.948Z"
+      }
+    }
+  }
+]

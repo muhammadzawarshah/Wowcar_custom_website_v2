@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-31T22:58:13.449Z",
+  "steps": [
+    {
+      "step": "login",
+      "status": 200,
+      "appId": "group1"
+    },
+    {
+      "step": "documents-list",
+      "status": 200,
+      "categoryCount": 6
+    },
+    {
+      "step": "upload-url",
+      "status": 201,
+      "documentId": "f733355c-e6a1-45ad-b1e0-f65c18af5cbc",
+      "storageOrigin": "https://storage.googleapis.com"
+    },
+    {
+      "step": "storage-put",
+      "status": 200
+    },
+    {
+      "step": "complete",
+      "status": 201,
+      "documentStatus": "UPLOADED"
+    },
+    {
+      "step": "list-after-upload",
+      "status": 200,
+      "testDocumentFound": true
+    },
+    {
+      "step": "view-download",
+      "status": 200,
+      "byteCount": 68,
+      "sha256Matches": true
+    },
+    {
+      "step": "delete-test-document",
+      "status": 200,
+      "deleted": true
+    },
+    {
+      "step": "logout-test-session",
+      "status": 204
+    }
+  ],
+  "verified": true
+}

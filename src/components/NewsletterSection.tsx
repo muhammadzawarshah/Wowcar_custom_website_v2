@@ -24,16 +24,16 @@ export default function NewsletterSection() {
       <div className="absolute inset-0 bg-[#2C3640]/85" />
 
       <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 space-y-6">
-        <span className="text-xs font-bold text-[#FDFDFE] uppercase tracking-wider bg-[#1B2935] px-4 py-1.5 rounded-full inline-block">
+        <span className="text-xs font-semibold text-[#FDFDFE] uppercase tracking-wider bg-[#1B2935] px-4 py-1.5 rounded-full inline-block">
           ติดตามเรา
         </span>
 
-        <h2 className="text-3xl sm:text-5xl font-extrabold text-[#FDFDFE] tracking-tight leading-tight">
+        <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-semibold text-[#FDFDFE] tracking-tight leading-tight">
           อย่าพลาด<span className="text-[#FF9540]">ทุกความเคลื่อนไหว</span><br />
           ในวงการ<span className="text-[#FF9540]">รถยนต์</span>
         </h2>
 
-        <p className="text-[#D8D7DA] text-sm sm:text-base max-w-xl mx-auto font-light leading-relaxed">
+        <p className="text-[#E5E7EB] text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
           สมัครสมาชิกเพื่อรับข่าวสารอัปเดต โปรโมชั่นรถเข้าใหม่ และข้อเสนอสุดพิเศษจาก WowCar ได้ที่นี่
         </p>
 
@@ -57,7 +57,7 @@ export default function NewsletterSection() {
             </div>
             <button
               type="submit"
-              className="bg-[#FF9540] hover:bg-[#E8822E] text-white font-bold px-7 py-3.5 rounded-xl shadow-lg transition transform active:scale-95 text-sm flex items-center justify-center cursor-pointer"
+              className="bg-[#FF9540] hover:bg-[#E8822E] text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg transition transform active:scale-95 text-sm flex items-center justify-center cursor-pointer"
             >
               <span>สมัครสมาชิก</span>
             </button>

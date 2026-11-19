@@ -68,7 +68,7 @@ export default function CarCard({ car }: CarCardProps) {
       <div className="p-4 flex flex-col flex-grow">
         {/* Title */}
         <Link href={`/listing/${car.id}`} className="group-hover:text-[#DA1C2E] transition">
-          <h3 className="font-extrabold text-[#283948] text-base line-clamp-2 min-h-[46px] leading-snug">
+          <h3 className="font-semibold text-[#283948] text-base line-clamp-2 min-h-[46px] leading-snug">
             {car.title}
           </h3>
         </Link>
@@ -76,19 +76,19 @@ export default function CarCard({ car }: CarCardProps) {
         {/* Price & Monthly */}
         <div className="mt-2.5 pb-3 border-b border-[#EAEFF5] flex items-baseline justify-between">
           <div>
-            <span className="text-xl font-black text-[#DA1C2E]">
+            <span className="text-xl font-bold text-[#DA1C2E]">
               {formattedPrice}
             </span>
-            <span className="text-xs font-bold text-[#283948] ml-1">฿</span>
+            <span className="text-sm font-semibold text-[#283948] ml-1">฿</span>
           </div>
 
-          <div className="text-[11px] text-[#556E82] font-medium">
-            ผ่อนเริ่มต้น <span className="text-[#FF9540] font-bold">{formattedMonthly}</span> ฿/ด.
+          <div className="text-xs text-[#556E82] font-normal">
+            ผ่อนเริ่มต้น <span className="text-[#FF9540] font-semibold">{formattedMonthly}</span> ฿/ด.
           </div>
         </div>
 
         {/* 4 Specs */}
-        <div className="grid grid-cols-2 gap-2 py-3 text-xs text-[#556E82] border-b border-[#EAEFF5]">
+        <div className="grid grid-cols-2 gap-2 py-3 text-sm text-[#556E82] border-b border-[#EAEFF5]">
           <div className="flex items-center gap-1.5">
             <Calendar className="w-3.5 h-3.5 text-[#FF9540]" />
             <span>ปี {car.year}</span>
@@ -108,13 +108,13 @@ export default function CarCard({ car }: CarCardProps) {
         </div>
 
         {/* Footer */}
-        <div className="mt-auto pt-3 flex items-center justify-between text-[11px] text-[#556E82]">
+        <div className="mt-auto pt-3 flex items-center justify-between text-xs text-[#556E82]">
           <div className="flex items-center gap-1 truncate max-w-[170px]">
             <MapPin className="w-3.5 h-3.5 text-[#FF9540] flex-shrink-0" />
             <span className="truncate">{car.location}</span>
           </div>
 
-          <div className="flex items-center gap-1 text-emerald-600 font-semibold">
+          <div className="flex items-center gap-1 text-emerald-600 font-medium">
             <CheckCircle2 className="w-3.5 h-3.5" />
             <span>ตรวจสภาพแล้ว</span>
           </div>

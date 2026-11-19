@@ -1,0 +1,19 @@
+node_modules/
+dist/
+coverage/
+src/generated/
+.env
+.env.*.local
+*.log
+.DS_Store
+tsconfig.tsbuildinfo
+.pgdata/
+!.env.example
+__pycache__/
+# Copies of DealerTrade logos, downloaded by the API at runtime
+media/
+.secrets/
+prisma/fixtures/fbook/
+*.dump*
+*.tar.gz
+*.zip
